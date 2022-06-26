@@ -35,6 +35,6 @@ install "$@"
 echo "Done! You can now use the script by running 'welp' in a terminal"
 
 # Deleting the script
-echo "The installer is now going to be deleted by itself, so that you don't have to delete it yourself..."
+echo "The installer is now going to be deleted by itself, so that you don't have to delete it yourself"
 rm install.sh
 exit 1
