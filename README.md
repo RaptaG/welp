@@ -1,6 +1,6 @@
 # welp
 
-This simple bash script searches quickly for you commands you don't know their function. DuckDuckGo is used as the search engine, for efficiency and privacy!
+This simple bash script searches quickly for you commands you don't know their function. DuckDuckGo is used as the search engine, for efficiency and privacy! It works on both Linux _and_ MacOS! (right?)
 
 ## Usage
 
