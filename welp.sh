@@ -1,18 +1,30 @@
 #!/usr/bin/env bash
-# Made by RaptaG cuz why not :)
+# Made by RaptaG
 
-# Crash Checker
+# Crash checker
 set -e
 
 # Definitions
 ver=1.0
 
-# Script info message
+# Startup message
 echo 'welp, version $ver (by RaptaG)'
 
-# Main script
-main() {
-    # Which command you want to search
+# Command searcher
+csearch() {
+    # Command
     echo -n 'Enter the command you want to search: '
-    read answer
+    read command
+    
+    # Programming language
+    echo -n 'In which programming language to search? '
+    read plang
+    
+    # Opening
+    echo 'Opening in the browser..'
+    xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
 }
+
+# Run the command searcher and exir
+csearch "$@"
+exit
