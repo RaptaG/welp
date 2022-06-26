@@ -1,4 +1,4 @@
-# [WIP] welp
+# welp
 
 This simple bash script searches quickly for you commands you don't know what they do, using DuckDuckGo, for efficiency and privacy!
 
