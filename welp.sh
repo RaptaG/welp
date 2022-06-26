@@ -13,7 +13,7 @@ echo 'welp, version $ver (by RaptaG)'
 # Command searcher
 csearch() {
     # Command
-    echo -n 'Enter the command you want to search: '
+    echo -n 'Enter the name of the command you want to search for: '
     read command
     
     # Programming language
@@ -25,6 +25,6 @@ csearch() {
     xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
 }
 
-# Run the command searcher and exir
+# Run the command searcher and exit
 csearch "$@"
 exit
