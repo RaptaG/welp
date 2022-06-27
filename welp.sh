@@ -21,8 +21,15 @@ csearch() {
     read plang
     
     # Opening
-    echo 'Opening in the browser..'
-    xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
+    echo 'Opening in the browser...'
+    case "$OSTYPE" in
+         linux*)
+         xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
+         ;;
+         *)
+         open https://duckduckgo.com/?q=$command+command+function+in+$plang
+         ;;
+    esac
 }
 
 # Run the command searcher and exit
