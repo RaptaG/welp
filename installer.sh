@@ -24,7 +24,7 @@ download() {
 install() {
          echo 'Installing the script...'
          chmod +x welp.sh
-         mv welp.sh /usr/bin/welp
+         mv welp.sh /usr/local/bin/welp
 }
 
 # Run the download and install commands
