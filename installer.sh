@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # Installer for welp
-
-# Crash checker
 set -e
 
 # Root permission checker
@@ -37,4 +35,4 @@ echo "Done! You can now use the script by running 'welp' in a terminal"
 # Deleting the script
 echo "The installer is now going to be deleted, so that you don't have to do it manually"
 rm install.sh
-exit 1
+exit 0
