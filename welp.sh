@@ -1,32 +1,30 @@
 #!/usr/bin/env bash
 # Made by RaptaG
-
-# Crash checker
 set -e
 
 # Definitions
-ver=1.0
+ver=1.1
 
 # Startup message
-echo 'welp, version $ver (by RaptaG)'
+echo "welp, version $ver (by RaptaG)"
 
 # Command searcher
 csearch() {
     # Command
-    echo -n 'Enter the name of the command you want to search for: '
+    echo -n "Enter the name of the command you want to search for: "
     read command
     
     # Programming language
-    echo -n 'In which programming language to search? '
+    echo -n "In which programming language to search? "
     read plang
     
-    # Opening
-    echo 'Opening in the browser...'
+    # Open
+    echo "Opening in the browser..."
     case "$OSTYPE" in
-         linux*)
+         linux-gnu)
          xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
          ;;
-         *)
+         darwin)
          open https://duckduckgo.com/?q=$command+command+function+in+$plang
          ;;
     esac
@@ -34,4 +32,4 @@ csearch() {
 
 # Run the command searcher and exit
 csearch "$@"
-exit
+exit 0
