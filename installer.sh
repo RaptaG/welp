@@ -6,7 +6,7 @@ set -e
 if [ $EUID -ne 0 ]; then
 	echo '$(basename $0) requires root permissions. Please run: sudo ./$(basename $0)'
 	echo 'Exiting...'
-	exit
+	exit 1
 fi
 
 # Startup message
