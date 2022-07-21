@@ -21,10 +21,10 @@ csearch() {
     # Open
     echo "Opening in the browser..."
     case "$OSTYPE" in
-         linux-gnu)
+    linux-gnu)
          xdg-open https://duckduckgo.com/?q=$command+command+function+in+$plang
          ;;
-         darwin)
+    darwin)
          open https://duckduckgo.com/?q=$command+command+function+in+$plang
          ;;
     esac
